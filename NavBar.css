@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for each nav item */
+.nav-item {
+  color: #fff !important; /* White text color */
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect for nav items */
+.nav-item:hover {
+  background-color: #555; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+  color: #f1c40f !important; /* Gold text color on hover */
+}
+
+/* Styling for active link */
+.navbar .active {
+  background-color: #f1c40f !important; /* Gold background for active item */
+  color: #333 !important; /* Darker text color for contrast */
+}
+
+/* Small screen responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    text-align: center;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,51 @@
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://uniabroad.io/storage/featuredImage/1673341732-banner-Deakin%20University.webp");
+  background-size: cover; /* Ensure the background image covers the whole area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Styling for the welcome message */
+.welcome-message {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adding shadow */
+  text-align: center;
+  animation: slideDown 1s ease;
+}
+
+.welcome-message h1 {
+  color: #333;
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Fade-in effect for the page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide down effect for the welcome message */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

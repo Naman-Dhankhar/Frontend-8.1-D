@@ -1,0 +1,143 @@
+.article-form {
+  max-width: 600px; /* Maintain a reasonable max width */
+  margin: 2rem auto; /* Center form on the page */
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Input and Textarea styling */
+.article-form input,
+.article-form textarea {
+  font-size: 1.1rem; /* Increase font size for better readability */
+  margin-bottom: 1.5rem; /* Space between inputs */
+  padding: 0.8rem; /* Padding for comfortable input */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width for inputs */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.article-form input:focus,
+.article-form textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Shadow effect */
+}
+
+/* Button container */
+.button-container {
+  text-align: center; /* Center the button */
+  margin-top: 1.5rem; /* Space above the button */
+}
+
+/* Post button styling */
+.post-button {
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  padding: 0.8rem 1.5rem; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem; /* Button text size */
+  transition: background-color 0.3s ease; /* Background color transition */
+}
+
+.post-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Articles list section */
+.articles-list {
+  max-width: 800px; /* Maintain a reasonable max width */
+  margin: 3rem auto; /* Center list on the page */
+  padding: 0 1rem; /* Add padding for small screens */
+}
+
+/* Articles list heading */
+.articles-list h3 {
+  text-align: center; /* Center heading */
+  font-size: 1.8rem; /* Increase font size */
+  margin-bottom: 2rem; /* Space below heading */
+  color: #333; /* Dark text color */
+  animation: slideIn 0.7s ease-in-out; /* Animation for heading */
+}
+
+/* Individual article item styling */
+.article-item {
+  background-color: #fff; /* White background for articles */
+  margin-bottom: 1.5rem; /* Space between articles */
+  padding: 1.5rem; /* Inner padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.article-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+.article-item h4 {
+  font-size: 1.5rem; /* Article title size */
+  color: #007bff; /* Article title color */
+  margin-bottom: 0.5rem; /* Space below title */
+}
+
+.article-item p {
+  color: #666; /* Gray text for content */
+  font-size: 1.1rem; /* Content font size */
+}
+
+/* Image styling */
+.article-item img.article-image {
+  max-width: 100%; /* Responsive image */
+  margin-top: 1rem; /* Space above image */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Animations */
+
+/* Fade-in animation for form and articles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Slide-in animation for headings */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); /* Slide in from the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at original position */
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .article-form {
+    padding: 1.5rem; /* Reduce padding for small screens */
+  }
+
+  .article-item {
+    padding: 1rem; /* Adjust padding for article items */
+  }
+
+  .articles-list {
+    padding: 0 1rem; /* Add padding to articles list */
+  }
+
+  .post-button {
+    padding: 0.7rem 1.2rem; /* Adjust button padding */
+  }
+}

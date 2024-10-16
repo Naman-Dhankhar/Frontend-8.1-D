@@ -1,0 +1,147 @@
+.question-form {
+  max-width: 800px;
+  margin: 0 auto; /* Center-align the form */
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.question-form.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.question-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs and TextArea */
+.question-form .ui.input input,
+.question-form .ui.textarea textarea {
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  transition: border 0.3s ease-in-out;
+}
+
+.question-form .ui.input input:focus,
+.question-form .ui.textarea textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Post button */
+.post-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+}
+
+.post-button:hover {
+  background-color: #0056b3;
+}
+
+/* Questions list section */
+.questions-list {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.questions-list.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.questions-list h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Individual Question Items */
+.question-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.question-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.question-item h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.question-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.question-item p strong {
+  color: #333;
+}
+
+/* Hover effect on question items */
+.question-item:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .question-form,
+  .questions-list {
+    padding: 1rem;
+  }
+
+  .post-button {
+    padding: 0.7rem 1.5rem;
+  }
+
+  .question-form label {
+    font-size: 1rem;
+  }
+
+  .question-item h4 {
+    font-size: 1.2rem;
+  }
+}

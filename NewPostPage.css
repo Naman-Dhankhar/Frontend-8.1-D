@@ -1,0 +1,88 @@
+.new-post-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background for the content area */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for some depth */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header for the new post section */
+.post-header-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.post-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Post type selection area */
+.post-type-selection {
+  margin-bottom: 2rem;
+}
+
+.post-type-message {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* Styling for radio buttons */
+.radio-label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.radio-label input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #007bff; /* Color of the radio button */
+}
+
+.radio-text {
+  font-weight: 500;
+}
+
+/* Post section with forms */
+.post-section {
+  margin-top: 2rem;
+}
+
+.post-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styles can be added for the QuestionForm and ArticleForm */
+
+/* Responsiveness for mobile devices */
+@media (max-width: 768px) {
+  .radio-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .post-heading {
+    font-size: 1.8rem;
+  }
+
+  .post-section h2 {
+    font-size: 1.5rem;
+  }
+}
